@@ -5,18 +5,18 @@
     background-color: black !important;
 }
 .navbar img{
-    width: 200px;
+    width: 12.5rem;
 }
 .form-inline{
     margin-right: auto;
     margin-left: auto;
 }
 .form-inline input{
-    border-radius: 30px;
-    width: 500px;
-    height: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+    border-radius: 1.875rem;
+    width: 31.25rem;
+    height: 1.875rem;
+    margin-left: 0.625rem;
+    margin-right: 10.625;
 }
 .search{
     width: 12cm;
@@ -30,11 +30,19 @@
 }
 .menu{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100vw;
     height: 70px;
     background-color: rgb(0, 43, 84);
+}
+.option{
+    font-family: "p22-stanyan", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 25px;
+
 }
 .fender{
     position: relative;
@@ -42,4 +50,37 @@
     background-position: center;
     height: 90vh;
 
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    margin: 1.25rem;
+}
+.cards .card{
+    margin: 2rem;
+}
+.cards .btn{
+    background-color: black;
+}
+.history-views{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.recient{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.footer{
+    width: 100vw;
+    height: 90px;
+    background-color: rgb(0, 43, 84);
+}
+.footer p{
+    color:white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
