@@ -27,6 +27,7 @@
 .icon{
     cursor: pointer;
     color: white;
+    margin: 10px;
 }
 .menu{
     display: flex;
@@ -42,6 +43,7 @@
     font-style: normal;
     color: white;
     font-size: 25px;
+    cursor: pointer;
 
 }
 .fender{
@@ -60,7 +62,32 @@
     margin: 2rem;
 }
 .cards .btn{
-    background-color: black;
+    background-color: transparent;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+}
+.cards h5{
+    font-family: "p22-stanyan", sans-serif;
+    font-size: 30px;
+}
+.jumbotron{
+    background-image: url(images/banner.jpg);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-family: "p22-stanyan", sans-serif;
+}
+.jumbotron .btn{
+    background-color: transparent;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
 }
 .history-views{
     display: flex;
@@ -68,10 +95,21 @@
     margin-top: 20px;
     
 }
+h3{
+    margin-left: 20px;
+}
 .recient{
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 20px;
+}
+.fa-star, .fa-star-half-stroke{
+    padding-top: 4px;
+    color: goldenrod;
+}
+.stars{
+    display: flex;
+
 }
 .footer{
     width: 100vw;
