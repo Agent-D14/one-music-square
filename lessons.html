@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>OMS-Lessons</title>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <!--FONTAWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--BOOTSTRAP-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.typekit.net/cgd3pat.css">
+        <!--CALENDAR-->
+        <link rel="stylesheet" href="evo-calendar.min.css">
+        <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+        <link rel="stylesheet" href="evo-calendar.royal-navy.min.css">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+         <!--NAVBAR-->
+         <nav class="navbar navbar-expand-lg navbar-light bg-dark nav">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo2.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <!--SEARCH BAR-->
+                <form class="form-inline my-2 my-lg-2">
+                    <input class="search" type="search" placeholder="Search" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                </form>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-user icon"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-cart-shopping icon"></i>
+                  </a>
+                </li>
+              </ul>
+             
+            </div>
+          </nav>
+          <!--MENU-->
+          <div class="menu">
+            <a href="lessons.html" class="option">Lessons 
+              </a>
+            <div class="option">Events</div>
+            <div class="option">Shop</div>
+            <div class="option">About</div>
+          </div>
+
+          <div class="info-container">
+            <h1>A Class For Everyone</h1>
+              <p>Whether an absolute beginner or a budding rockstar, 
+                our students will grow as a musician. We offer 
+                individual lessons, group rehearsals and live performances, 
+                all with the goal of getting our students on stage performing 
+                at a real rock show at a real music venue. Click here to see
+              a list of classes. To schedule a class call 936-381-7348. </p>
+          </div>
+            <div class="hero">
+                <div id="calendar"></div>
+            </div>
+            
+            <div class="classes-offered">
+              <div class="lesson" id="guitar">
+                <h3>Guitar 101</h3>
+                <p>Learn the basics of the guitar, from how to hold it to
+                  the names of the strings. Great fir absilute beginners.
+                </p>
+              </div>
+              <div class="lesson" id="piano">
+                <h3>Beginner Piano</h3>
+                <p>Introduction to piano is a great class for those with no
+                  musical background. Learn the fundamentals of classical paino.
+                </p>
+              </div>
+              <div class="lesson" id="kamp">
+                <h3>KAMP</h3>
+                <p>All ages and levels welcome. Spend
+                  the day playing music and connecting with others. Learns a new skill
+                  or just have fun.
+                </p>
+              </div>
+            </div>
+
+            <!--FOOTER-->
+          <div class="footer2">
+            <p>Copyright 2021</p>
+          </div>
+
+
+          
+
+
+           <!--BOOTSTRAP-->
+           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+           <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+           
+           <!--CALENDAT-->
+           <!-- Add jQuery library (required) -->
+           <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+ 
+           <!-- Add the evo-calendar.js for.. obviously, functionality! -->
+           <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
+          <script src="evo-calendar.min.js"></script>
+
+          <script>
+
+                $(document).ready(function() {
+                    $('#calendar').evoCalendar({
+
+                        theme: "Midnight Blue",
+                        calendarEvents: [
+                            {
+                                id: 'event1', // Event's ID (required)
+                                name: "New Year", // Event name (required)
+                                date: "January/1/2020", // Event date (required)
+                                description: "CLOSED",
+                                type: "holiday", // Event type (required)
+                                everyYear: true // Same event every year (optional)
+                            },
+                            {
+                                id: 'event2', // Event's ID (required)
+                                name: "Guitar 101", // Event name (required)
+                                badge: "Full",
+                                date: "September/4/2023", // Event date (required)
+                                description: "11:30am - 12:30pm",
+                                type: "event" // Event type (required)
+                            },
+                            {
+                                id: 'event2', // Event's ID (required)
+                                name: "Guitar 101", // Event name (required)
+                                badge: "Open",
+                                date: "September/11/2023", // Event date (required)
+                                description: "11:30am - 12:30pm",
+                                type: "event", // Event type (required)
+                                color:"#228B22"
+                            },
+                            {
+                                id: 'event2', // Event's ID (required)
+                                name: "Guitar 101", // Event name (required)
+                                badge: "Open",
+                                date: "September/18/2023", // Event date (required)
+                                description: "11:30am - 12:30pm",
+                                type: "event", // Event type (required)
+                                color:"#228B22"
+                            },
+                            {
+                                id: 'event2', // Event's ID (required)
+                                name: "Beginner Piano", // Event name (required)
+                                badge: "Open",
+                                date: "September/13/2023", // Event date (required)
+                                description: "1:00pm - 2:00pm",
+                                type: "event", // Event type (required)
+                                color:"#228B22"
+                            },
+                            {
+                                id: 'event2', // Event's ID (required)
+                                name: "Beginner Piano", // Event name (required)
+                                badge: "Full",
+                                date: "September/20/2023", // Event date (required)
+                                description: "1:00pm - 2:00pm",
+                                type: "event", // Event type (required)
+                            },
+                            {
+                                id: 'event2', // Event's ID (required)
+                                name: "Guitar 101", // Event name (required)
+                                badge: "Open",
+                                date: "September/25/2023", // Event date (required)
+                                description: "11:30am - 12:30pm",
+                                type: "event", // Event type (required)
+                                color:"#228B22"
+                            },
+                            {
+                                id: 'event2', // Event's ID (required)
+                                name: "Guitar 101", // Event name (required)
+                                badge: "Full",
+                                date: "October/2/2023", // Event date (required)
+                                description: "11:30am - 12:30pm",
+                                type: "event" // Event type (required)
+                            },
+                            {
+                                id: 'event2', // Event's ID (required)
+                                name: "Guitar 101", // Event name (required)
+                                badge: "Full",
+                                date: "October/9/2023", // Event date (required)
+                                description: "11:30am - 12:30pm",
+                                type: "event", // Event type (required)
+                                color:"#228B22"
+                            },
+                            {
+                                id: 'event2', // Event's ID (required)
+                                name: "Guitar 101", // Event name (required)
+                                badge: "Full",
+                                date: "October/16/2023", // Event date (required)
+                                description: "11:30am - 12:30pm",
+                                type: "event" // Event type (required)
+                            },
+                            {
+                                id: 'event2', // Event's ID (required)
+                                name: "Guitar 101", // Event name (required)
+                                badge: "Open",
+                                date: "October/23/2023", // Event date (required)
+                                description: "11:30am - 12:30pm",
+                                type: "event", // Event type (required)
+                                color:"#228B22"
+                            },
+                            {
+                                id: 'event2', // Event's ID (required)
+                                name: "Guitar 101", // Event name (required)
+                                badge: "Open",
+                                date: "October/30/2023", // Event date (required)
+                                description: "11:30am - 12:30pm",
+                                type: "event", // Event type (required)
+                                color:"#228B22"
+                            },
+
+                            {
+                                name: "Chistmas Break",
+                                //badge: "02/13 - 02/15",  Event badge (optional)
+                                date: ["December/23/2023", "December/26/2023"], // Date range
+                                description: "CLOSE for Christmas", // Event description (optional)
+                                type: "event",
+                                color: "#DC143C",
+                                everyYear: true 
+                                 //color: "#63d867" Event custom color (optional)
+                            },
+                            {
+                                id: 'event3', // Event's ID (required)
+                                name: "Thanksgiving", // Event name (required)
+                                date: "November/23/2023", // Event date (required)
+                                description: "CLOSED",
+                                type: "holiday", // Event type (required)
+                               //  everyYear: true Same event every year (optional)
+                            },
+                            ]
+                    })
+                })
+
+          </script>
+     </body>
+ </html>

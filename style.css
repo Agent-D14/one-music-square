@@ -1,6 +1,9 @@
 *{
     padding: 0;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .nav{
     background-color: black !important;
 }
@@ -111,12 +114,77 @@ h3{
     display: flex;
 
 }
+
+/*Calendar*/
+#calendar{
+    width: 80%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.menu .option:hover{
+    color: rgb(0, 169, 182);
+}
+.info-container{
+    position: relative;
+    width: 60%;
+    top: 20px;
+    left: 20%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+}
+.info-container h1{
+    font-family: "p22-stanyan", sans-serif;
+    font-size: 80px;
+}
+.classes-offered{
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+}
+.lesson{
+    position: absolute;
+    display: inline-block;
+    filter:drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.581));
+    background-color: white;
+    top: 900px;
+    width: 350px;
+    margin: 30px;
+    padding: 40px;
+    
+}
+#guitar{
+    top: 900px;
+    left: 8%;
+}
+#piano{
+    top: 900px;
+    left: 38%;
+}
+#kamp{
+    top: 900px;
+    left: 70%;
+}
+/*Footer*/
 .footer{
+    position: relative;
+    bottom: 0;
     width: 100vw;
     height: 90px;
     background-color: rgb(0, 43, 84);
 }
-.footer p{
+.footer2{
+    position: relative;
+    bottom: 0;
+    top: 1300px;
+    width: 100vw;
+    height: 90px;
+    background-color: rgb(0, 43, 84);
+}
+.footer p, .footer2 p{
     color:white;
     justify-content: center;
     align-items: center;
