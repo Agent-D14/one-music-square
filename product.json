@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Gibson Guitar - Amber",
+        "price": 989,
+        "image": "images/product1.jpg.webp"
+    },
+    {
+        "id": 2,
+        "name": "Gibson Guitar - Skyblue",
+        "price": 979,
+        "image": "images/product2.jpg.webp"
+    },
+    {
+        "id": 3,
+        "name": "Jazzy Drum Set",
+        "price": 1299,
+        "image": "images/product3.jpg.webp"
+    },
+    {
+        "id": 4,
+        "name": "Studip Guitar Amp",
+        "price": 400,
+        "image": "images/product4.jpg.webp"
+    },
+    {
+        "id": 5,
+        "name": "Electronic Drum Kit",
+        "price": 800,
+        "image": "images/product5.jpg.webp"
+    },
+    {
+        "id": 6,
+        "name": "Fender - Electric Green",
+        "price": 700,
+        "image": "images/product6.jpg.webp"
+    },
+    {
+        "id": 7,
+        "name": "Digital Keyboard",
+        "price": 1300,
+        "image": "images/product7.jpg.webp"
+    },
+    {
+        "id": 8,
+        "name": "Scarlett Studio Pack",
+        "price": 300,
+        "image": "images/product8.jpg.webp"
+    },
+    {
+        "id": 9,
+        "name": "Acoustic Drum Set",
+        "price": 999,
+        "image": "images/product9.jpg.webp"
+    }
+]
