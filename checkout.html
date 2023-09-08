@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>OMS-Shop</title>
+        <title>OMS-Checkout</title>
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <!--FONTAWESOME-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -56,69 +56,78 @@
             <div class="option">About</div>
           </div>
 
-          <!--HERO SECTION-->
-          <div class="info-container">
-            <h1>Shop New and Used Items</h1>
-              <p>Explore out extensive colletions and find something 
-                that speaks to you </p>
-                
-                <!--PRODUCTS-->
-                <div class="container">
-                    <div class="listProducts">
-                      <div class="item">
-                        <img src="images/product1.jpg.webp">
-                        <h2>Product Name</h2>
-                        <div class="price">$989</div>
-                        <button>Add To Cart</button>
-                      </div>
-                    </div>
-                </div>
-          </div>
-
-          <div class="cart">
-            <h2>CART</h2>
-            <div class="listCart">
-                <div class="item">
-                    <img src="images/product1.jpg.webp">
-                    <div class="content">
-                        <div class="name">
-                            product name
-                        </div>
-                        <div class="price">
-                            $989/each
+          <!--CHECKOUT-->
+          <div class="container">
+            <div class="checkoutLayout">
+                <div class="returnCart">
+                    <a href="shop.html">Keep Shopping</a>
+                    <h1>List of Products in Cart</h1>
+                    <div class="list">
+                        <div class="item">
+                            <img src="images/product1.jpg.webp" alt="">
+                            <div class="info">
+                                <div class="name">Product 1</div>
+                                <div class="price">$989/each</div>
+                            </div>
+                            <div class="quantity">1</div>
+                            <div class="returnPrice">$989</div>
                         </div>
                     </div>
-                    <div class="quantity">
-                        <button>-</button>
-                        <span class="vaule">1</span>
-                        <button>+</button>
-                    </div>
                 </div>
-            </div>
-            <div class="buttons">
-                <div class="close">CLOSE</div>
-                <div class="checkout">
-                    <a href="checkout.html">CHECKOUT</a>
+
+                <div class="right">
+                    <h1>Checkout</h1>
+                    <div class="form">
+                        <div class="group">
+                            <label for="">Full Name</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="group">
+                            <label for="">Phone Number</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="group">
+                            <label for="">Address</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="group">
+                            <label for="">Country</label>
+                            <select name="" id="">
+                                <option value="">Chooe...</option>
+                                <option value="united states">United States</option>
+                            </select>
+                        </div>
+                        <div class="group">
+                            <label for="">State</label>
+                            <select name="" id="">
+                                <option value="">Chooe...</option>
+                                <option value="texas">Texas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="return">
+                        <div class="row">
+                            <div>Total Quantity</div>
+                            <div class="totalQuantity">0</div>
+                        </div>
+                        <div class="row">
+                            <div>Total Price</div>
+                            <div class="totalPrice">$60</div>
+                        </div>
+                    </div>
+                    <button class="buttonCheckout">
+                        CHECKOUT
+                    </button>
                 </div>
             </div>
           </div>
-
 
           <!--footer-->
           <div class="footer2">
             <p>Copyright 2021</p>
           </div>
 
-
-
-          <script type='text/javascript' src="app.js"></script>
-
-          <!--BOOTSTRAP-->
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-          
-          
-    
-      </body>
+          <script type='text/javascript' src="checkout.js"></script>
+             
+    </body>
 </html>
