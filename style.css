@@ -369,6 +369,7 @@ h3{
     font-weight: bold;
     color: white;
     background-color: rgb(0, 169, 182);
+    cursor: pointer;
 }
 .returnCart h1{
     border-top: 10px;
@@ -388,7 +389,26 @@ h3{
     box-shadow: 0 10px 20px #555;
     border-radius: 20px;
 }
-
+.container .info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+.container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: "p22-stanyan", sans-serif;
+    font-size: 80px;
+}
+.container .info img{
+    width: 700px;
+}
+.container .info p{
+    margin-top: 100px;
+}
 
 /*Footer*/
 .footer{
@@ -414,7 +434,7 @@ h3{
     height: 90px;
     background-color: rgb(0, 43, 84);
 }
-.footer p, .footer2 p{
+.footer p, .footer2 p, .footer3 p{
     color:white;
     justify-content: center;
     align-items: center;
